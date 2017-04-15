@@ -1,0 +1,422 @@
+@import "vendors/bootstrap/_bootstrap.scss";
+
+$first-font-color: #fff;
+$second-font-color: #00417A;
+$important-text: #f00;
+$blue-text: #00A1D4;
+
+body {
+  padding-top: 40px;
+  color: $first-font-color;
+  background-color: #fff;
+}
+
+/*section intro*/
+#intro {
+  height: 720px;
+  width: 100%;
+  max-width: 1600px;
+  background: url("../img/img_index/bg_img.png");
+  background-repeat: no-repeat;
+  position: relative;
+  background-position: center;
+  margin-bottom: -22px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#logo img {
+  padding-top: 10px;
+}
+
+#intro h3, #intro h1 {
+  position: absolute;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#intro h3 {
+  bottom: 20%;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#intro h1 {
+  bottom: 3%;
+  font-family: serif;
+  font-weight: bold;
+}
+
+/*section main-section*/
+#main-section {
+  height: 480px;
+  width: 100%;
+  max-width: 1600px;
+  background: url("../img/img_index/bg_main_section.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
+#main-section .mobile-text, span .mobile-text {
+  display: none;
+}
+
+#main-section h2 {
+  padding-top: 20px;
+}
+
+#main-section li {
+  list-style-position: inside;
+}
+
+#main-section h4 {
+  margin-top: 42;
+  margin-bottom: 55px;
+}
+
+/*button*/
+.blue-button {
+  background: url("../img/img_index/button.png") no-repeat center;
+  color: $first-font-color;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  display: block;
+  font-size: 16px;
+  margin: 38px 2px;
+  cursor: pointer;
+}
+
+a:hover {
+  text-decoration: none;
+  color: $first-font-color;
+}
+
+.blue-text {
+  color: $blue-text;
+}
+
+/*section lahitapiola-rahastot*/
+#lahitapiola-rahastot {
+  color: $second-font-color;
+}
+
+#lahitapiola-rahastot h2 {
+  margin-top: 6%;
+  margin-bottom: 2%;
+}
+
+#lahitapiola-rahastot h4 {
+  line-height: 1.5;
+}
+
+#lahitapiola-rahastot a {
+  margin-top: 3%;
+}
+
+/*section form-section*/
+#form-section {
+  height: 760px;
+  width: 100%;
+  max-width: 1600px;
+  font-size: 14px;
+  background: url("../img/img_index/bg_form.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 0%;
+  padding-bottom: 0%;
+  margin-top: 0%;
+  margin-bottom: 0%;
+  color: $second-font-color;
+}
+
+#form-section h2 {
+  padding-top: 6%;
+}
+
+#form-section h4 {
+  line-height: 1.5;
+}
+span.mobile-text {
+  display: none;
+}
+
+
+form {
+  margin-top: 7%;
+}
+
+#viesti {
+  background: url("../img/img_index/rectangle_big.png") no-repeat;
+  float: left;
+  height: 130px;
+  width: 240px;
+}
+
+#etunimi, #sukunimi, #sahkopositiosoite, #puhelinumero, #postinumero {
+  background: url("../img/img_index/rectangle_small.png") no-repeat center;
+  height: 50px;
+  width: 240px;
+}
+
+#form-section label {
+  text-align: left;
+}
+
+#form-section span {
+  line-height: 25px;
+}
+
+#columns {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: flex-start;
+  -moz-align-items: flex-start;
+  -ms-align-items: flex-start;
+  -o-align-items: flex-start;
+  align-items: flex-start;
+}
+
+#column-left {
+  text-align: right;
+}
+
+#column-right {
+  text-align: left;
+}
+
+#check-box-form {
+  margin-top: 11px;
+}
+
+#check-box-form div {
+  display: inline-block;
+  text-align: normal;
+  vertical-align: middle;
+}
+
+/*footer*/
+footer {
+  height: 160px;
+  width: 100%;
+  max-width: 1600px;
+  background: url("../img/img_index/bg_footer.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 2%;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+footer div {
+  display: inline-block;
+  text-align: normal;
+  vertical-align: middle;
+}
+
+footer a {
+  color: $first-font-color;
+}
+
+/*mediaqueries*/
+@media(min-width: 768px) {
+  footer {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    justify-content: center;
+    -webkit-align-items: flex-start;
+    -moz-align-items: flex-start;
+    -ms-align-items: flex-start;
+    -o-align-items: flex-start;
+    align-items: flex-start;
+  }
+  footer img {
+    margin-right: 1em;
+  }
+  footer ul li {
+    float: left;
+    list-style: none;
+    margin-right: 10px;
+  }
+}
+
+@media(min-width: 768px) and (max-width: 1023px) {
+  /*section form-section*/
+  .row {
+    text-align: center;
+    -ms-flex-pack: justify;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+
+  }
+  #column-left, #column-right {
+    display: inline-block;
+    text-align: normal;
+    vertical-align: middle;
+  }
+}
+
+@media(max-width: 767px) {
+  * {
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+  body {
+    max-width: 320px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+    /*section intro*/
+    #intro {
+      height: 470px;
+      background: url("../img/img_index/mobile_bg_img.png");
+    }
+    #intro img {
+      float: left;
+      margin-left: 25px;
+    }
+    #intro h3 {
+      width: 290px;
+      font-size: 14px;
+    }
+    #intro h1 {
+      width: 290px;
+      bottom: 0%;
+    }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    /*section main-section*/
+    #main-section {
+      height: 440px;
+      background: url("../img/img_index/mobile_bg_main_section.png");
+    }
+
+    #main-section ul, #main-section .desktop-text {
+      display: none;
+    }
+
+    #main-section .mobile-text {
+      display: block;
+    }
+    #main-section h2 {
+      margin-top: 6%;
+      padding-top: 0px;
+    }
+
+    #main-section h5 {
+      margin-top: 1%;
+      margin-bottom: 2%;
+      padding-top: 0px;
+      font-size: 14px;
+    }
+
+    #main-section h4 {
+      font-size: 14px;
+    }
+
+    .blue-button {
+      background-size: 87.5% 100%;
+    }
+
+    /* section lahitapiola-rahastot*/
+    #lahitapiola-rahastot {
+      display: none;
+    }
+
+    /*form-section*/
+    #form-section {
+      height: 100%;
+      min-height: 878px;
+      background: #F2F5F7 url("../img/img_index/mobile_bg_form.png");
+      background-size: cover;
+    }
+
+    #form-section h2 {
+      margin: 0 auto;
+      padding-top: 8%;
+      padding-bottom: 0%;
+    }
+
+    #form-section h4 {
+      font-size: 16px;
+      font-weight: bold;
+      margin-top: -4px;
+    }
+
+    span.desktop-text {
+      display: none;
+    }
+
+    span.mobile-text {
+      display: inline;
+    }
+
+    #viesti {
+      clear: both;
+      width: 260px;
+      background: url("../img/img_index/mobile_rectangle.png");
+      background-size: 100% 100%;
+    }
+
+    #etunimi, #sukunimi, #sahkopositiosoite, #puhelinumero, #postinumero {
+      background: url("../img/img_index/mobile_rectangle_small.png") no-repeat center;
+      clear: both;
+      width: 260px;
+      background-size: 100% 100%;
+    }
+
+    #columns {
+      margin-left: auto;
+      margin-right: auto;
+      -ms--flex-direction: column;
+      -moz-flex-direction: column;
+      -o-flex-direction: column;
+      -webkit-flex-direction: column;
+      flex-direction: column;
+      justify-content: center;
+    }
+    #form-section .blue-button {
+      display: inline-block;
+      width: 100%;
+      margin-top: 7px;
+      margin-bottom: 20px;
+      padding-bottom: 30px;
+    }
+
+    /*footer*/
+    footer {
+      padding-top: 0;
+    }
+
+    footer img {
+      margin-top: 15px;
+    }
+
+    footer ul li {
+      display: inline-block;
+      padding: 10px;
+    }
+  }
