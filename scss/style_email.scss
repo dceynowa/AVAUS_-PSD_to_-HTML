@@ -98,6 +98,13 @@ footer p:first-child {
   }
 }
 
+@media(min-width: 768px) and (max-width: 1023px) {
+
+  #img-rabbat img {
+    display: none;
+  }
+}
+
 @media(max-width: 767px) {
 
   body {
@@ -118,30 +125,23 @@ footer p:first-child {
     display: none;
   }
   img#header-line {
-    display: none;
+    display: inline-block;
+    height: 6px !important;
+    margin-top: 0px;
 
   }
   header div.line {
     position: relative;
   }
-  header div.line::before {
-    content: url("../img/img_email/line_bold_small.png");
-    position: absolute;
-    bottom: -5px;
-  }
 
   /*section main-section*/
   #main-img img {
     width: 290px;
-    margin-top: 0;
+    margin-top: -6px;
     padding-top: 0;
-    display: none;
+
   }
-  #main-img::before {
-    max-width: 290px;
-    margin-left: 0;
-    content: url("../img/img_email/main_img_small.png");
-  }
+
   h1 {
     font-size: 1.5em;
     font-weight: bold;
